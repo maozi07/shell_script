@@ -1,0 +1,8 @@
+sudo without use password:
+hadoop    ALL=(ALL:ALL) NOPASSWD: ALL
+
+sudo with use password but some safe options:
+hadoop ALL=(ALL:ALL) NOPASSWD: ALL,!/usr/bin/passwd,!/usr/bin/passwd root,!/usr/bin/passwd [A-Za-z]*,!/bin/su,!/bin/su - root,!/usr/sbin/visudo
+
+sudo whit password:
+hadoop   ALL=(ALL:ALL) ALL
