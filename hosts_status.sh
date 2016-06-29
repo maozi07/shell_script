@@ -42,6 +42,7 @@ result=$($catCmd /proc/loadavg | $awkCmd '{print "{ \"1_min_avg\": " ($1)/'$numb
 
 echo -n ${result%?}
 
+###########bandwidth_for_INC
 tmp1=`mktemp`
 tmp2=`mktemp`
 /bin/cat /proc/net/dev | awk 'NR>2 {print $1" tx "$2" ,rx "$10}' |sed 's/://' >$tmp1
