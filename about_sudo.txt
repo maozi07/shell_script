@@ -6,3 +6,6 @@ hadoop ALL=(ALL:ALL) NOPASSWD: ALL,!/usr/bin/passwd,!/usr/bin/passwd root,!/usr/
 
 sudo whit password:
 hadoop   ALL=(ALL:ALL) ALL
+
+add user to to sudo file command line
+sudo sh -c 'echo "louguan  ALL=(ALL)   NOPASSWD: ALL" >> /etc/sudoers'
